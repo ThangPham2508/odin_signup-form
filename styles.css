@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: clamp(300px, 40vw, 500px);
+    background: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-family: 'Norse', sans-serif;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    background: rgba(0, 0, 0, 0.322);
+    padding: 10px;
+}
+
+.odin-logo {
+    width: 80px;
+    height: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 32px;
+    padding-top: 130px;
+    background: rgba(0, 0, 0, 0.041);
+}
+
+.intro1 {
+    margin-bottom: 35px;
+}
+
+.intro2 {
+    margin-bottom: 30px;
+}
+
+.form {
+    padding: 16px 32px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.092)
+}
+
+.form > div {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form > div > div{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color:rgba(0, 0, 0, 0.36)
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+form > div {
+    display: flex;
+    gap: 60px;
+}
+
+input {
+    width: 200px;
+    border: 1px solid #E5E7EB; 
+}
+
+.account {
+    background: rgba(0, 0, 0, 0.041);
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 32px;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background-color: rgba(19, 54, 4, 0.524);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    appearance: none;
+}
+
+button:hover {
+    background-color: rgba(19, 54, 4, 0.723);
+}
+
+a {
+    color: rgba(19, 54, 4, 0.524);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(22, 58, 203);
+}
+
+#password:invalid, #confirm:invalid, #email:invalid, #phone:invalid {
+    border: 1px solid red;
+}
+
+#password:invalid + span::after, #confirm:invalid + span::after{
+    content: "Password does not match";
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}

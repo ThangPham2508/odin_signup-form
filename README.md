@@ -1,1 +1,3 @@
-# odin_signup-forn
+# odin_signup-form
+
+HTML + CSS practice.
